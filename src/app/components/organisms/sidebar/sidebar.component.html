@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="container__upper">
+    <app-sideupper (changePosition)="onChangePosition($event)" [position]="position" [ngStyle]="{width: '100%', height: '100%'}"/>
+  </div>
+
+  <div class="container__lower">
+    <app-switcher />
+  </div>
+
+</div>
