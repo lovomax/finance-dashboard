@@ -1,0 +1,11 @@
+<div class="container__collapse-button">
+  <app-collapse-button />
+</div>
+<app-logo />
+
+<div class="container__list" *ngFor="let button of buttons">
+  <div class="container__button" (click)="handlePositionClick(button.btnName)" [ngClass]="button.btnName === position ? 'container__button--selected' : ''">
+    <app-image [color]="button.btnName === position ? '#fafafa' : '#1c1917'" [route]="button.imgRoute"/>
+    <app-side-button [buttonAttribute]="button"/>
+  </div>
+</div>
