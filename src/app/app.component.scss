@@ -1,15 +1,9 @@
 .content {
   display: flex;
   position: relative;
-  width: 100vw;
-}
-.sidebar {
-
+  width: 100%;
 }
 .router {
-  position: relative;
-}
-.router-container {
-  max-width: fit-content;
-  position: relative;
+  width: 100%;
+
 }
