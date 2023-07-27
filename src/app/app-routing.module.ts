@@ -5,8 +5,8 @@ import { LineGraphComponent } from './components/atoms/line-graph/line-graph.com
 import { PlaceholderComponent } from './components/organisms/placeholder/placeholder.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/dashboard', pathMatch:'full'},
-  {path: 'dashboard', component: DashboardComponent},
+  {path: 'dashboard', redirectTo: '/', pathMatch:'full'},
+  {path: '', component: DashboardComponent},
   {path: 'tools', component: LineGraphComponent},
   {path: '**', component: PlaceholderComponent}
 ];

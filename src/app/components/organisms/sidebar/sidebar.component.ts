@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SidebarPositionService } from 'src/app/services/sidebar-position.service';
 import { Router } from '@angular/router';
 
@@ -7,13 +7,18 @@ import { Router } from '@angular/router';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent {
-  position : string = this.service.getData('position')
+export class SidebarComponent implements OnInit{
+  position : string = "dashboard"
   isClosed : boolean = false
   constructor(private service : SidebarPositionService, private router: Router) {}
-
+  ngOnInit(): void {
+    const data = this.service.getData('position')
+    if(data.length) {
+      this.position = data
+    }
+    this.onChangeRoute(this.position)
+  }
   onChangePosition(position : string) {
-    console.log('Position', position)
     this.service.saveData(position)
     position = position
     this.onChangeRoute(position)
@@ -24,7 +29,6 @@ export class SidebarComponent {
   }
 
   onChangeRoute($myParam: string = ''): void {
-    console.log('enter')
     const navigationDetails: string[] = [];
     if($myParam.length) {
       navigationDetails.push('/' + $myParam);
