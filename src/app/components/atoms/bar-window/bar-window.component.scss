@@ -14,11 +14,14 @@
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 .container__header {
-
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 3rem;
 }
+.container__title {
+  width: 100%;
+} 
 .header__title span {
   font-weight: 500;
   font-size: 28px;
@@ -26,7 +29,7 @@
 .header__buttons {
   display: flex;
   gap: 1rem;
-
+  transition: all 0.3s;
 }
 
 .button {
@@ -39,6 +42,7 @@
   padding: 0.5 1rem;
   font-weight: 500;
   width: 5rem;
+  transition: all 0.3s;
 }
 
 .button--selected { 
@@ -51,6 +55,7 @@
   background-color: rgb(91, 33, 182);
   color: #fafafa;
   font-weight: 500;
+  transition: all 0.3s;
 }
 .chart-container {
   height: 100%;

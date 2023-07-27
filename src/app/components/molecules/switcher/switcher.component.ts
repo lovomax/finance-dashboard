@@ -6,4 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./switcher.component.scss']
 })
 export class SwitcherComponent {
+  @Input() isClosed! : boolean
 }

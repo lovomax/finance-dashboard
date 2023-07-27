@@ -13,9 +13,11 @@ export class SidebarComponent implements OnInit{
   constructor(private service : SidebarPositionService, private router: Router) {}
   ngOnInit(): void {
     const data = this.service.getData('position')
+    const state = Boolean(this.service.getData('closed') === 'true')
     if(data.length) {
       this.position = data
     }
+    this.isClosed = state
     this.onChangeRoute(this.position)
   }
   onChangePosition(position : string) {
@@ -24,8 +26,10 @@ export class SidebarComponent implements OnInit{
     this.onChangeRoute(position)
   }
 
-  onChangeSidebar() {
-    this.isClosed = !this.isClosed
+  onChangeState() {
+    const state = !this.isClosed
+    this.service.saveState(state)
+    this.isClosed = state
   }
 
   onChangeRoute($myParam: string = ''): void {

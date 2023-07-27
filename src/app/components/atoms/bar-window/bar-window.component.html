@@ -4,19 +4,17 @@
       <span>Imperssion</span>
     </div>
     <div class="header__buttons">
-      <div class="button--selected">
-        <p>Weekly</p>
-      </div>
-      <div class="button">
-        <p>Monthly</p>
+      <div *ngFor="let button of buttons" (click)="handleButton(button.btnName)" [ngClass]="selected === button.btnName ? 'button--selected' : 'button'">
+        <p>{{button.value}}</p>
       </div>
     </div>
   </div>
-  <div class="container__body">
-    <div class="chart-container">
-      <canvas  id="MyChart" >{{ chart }}</canvas>
+  <div class="container__body" [ngClass]="selected === 'weekly' ? 'data-week' : 'data-month'">
+    <div class="chart-container week">
+      <canvas id="data-week" >{{ chart }}</canvas>
     </div>
   </div>
+
 </div>
 
 

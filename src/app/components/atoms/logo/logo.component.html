@@ -1,6 +1,8 @@
-<div class="container__logo" [ngClass]="isClosed ? 'closed-container' : ''">
-  <img *ngIf="!isClosed; else smallImage" src="assets/sa-esportes-big.png">
-  <ng-template #smallImage>
-    <img src="assets/sa-esportes.png" [ngStyle]="">
-  </ng-template>
+<div class="container">
+  <div class="container__logo" [ngClass]="isClosed ? 'closed-container' : ''">
+    <img *ngIf="!isClosed; else smallImage" src="assets/sa-esportes-big.png">
+    <ng-template #smallImage>
+      <img src="assets/sa-esportes.png" [ngStyle]="">
+    </ng-template>
+  </div>
 </div>
