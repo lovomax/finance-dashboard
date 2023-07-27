@@ -1,14 +1,19 @@
+.container {
+  position: relative;
+  height: 270px;
+  overflow-x: scroll;
+}
 .container__holder {
   padding: 2rem 3rem;
   border-bottom: 1px solid rgb(244 244 245);
 }
 
 .container__card-list {
+  position: absolute;
   display: flex;
   gap: 2rem;
   padding-bottom: 2rem;
-
-  overflow-x: scroll;
+  left: 0;
   scrollbar-width: none;
   overflow-y: auto;
   -ms-overflow-style: none;
@@ -24,7 +29,10 @@
   height: 170px;
   border-radius: 20px;
   background-color: red;
+  color: #fafafa;
   padding: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .card__logo {
@@ -36,4 +44,18 @@
   height: 45px;
   border-radius: 100%;
   background-color: rgba(255, 81, 81, 0.715);
+}
+
+.card__absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  height: 100%;
+  width: 200px;
+}
+
+.card__absolute img {
+  width: 200px;
+  transform: rotate(25deg);
 }
