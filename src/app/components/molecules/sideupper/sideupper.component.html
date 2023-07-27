@@ -1,11 +1,11 @@
-<div class="container__collapse-button">
-  <app-collapse-button />
+<div class="container__collapse-button" [ngStyle]="{'align-self': isClosed ? 'center' : 'flex-start'}" (click)="handleCloseClick()">
+  <app-collapse-button [isClosed]="isClosed"/>
 </div>
-<app-logo />
+<app-logo [isClosed]="isClosed"/>
 
 <div class="container__list" *ngFor="let button of buttons">
   <div class="container__button" (click)="handlePositionClick(button.btnName)" [ngClass]="button.btnName === position ? 'container__button--selected' : ''">
-    <app-image [color]="button.btnName === position ? '#fafafa' : '#1c1917'" [route]="button.imgRoute"/>
-    <app-side-button [buttonAttribute]="button"/>
+    <app-image class="container_image" [ngStyle]="{'background-color': button.btnName === position ? '#fafafa' : '#1c1917', 'width': '30px', 'height':'30px'}" [route]="button.imgRoute"/>
+    <app-side-button *ngIf="!isClosed" [buttonAttribute]="button"/>
   </div>
 </div>

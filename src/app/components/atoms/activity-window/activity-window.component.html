@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="container__header">
+    <span>Activity</span>
+  </div>
+  <div class="container__body">
+    <div class="body__activity">
+      <div class="activity__set">
+
+          <app-image [route]="'assets/currency-btc.svg'" [ngClass]="'set__currency--btc'"/>
+
+        <div class="set__details">
+          <p>Sent Bitcoin</p>
+          <p>To Bitcoin Address</p>
+        </div>
+      </div>
+      <div class="activity__price">
+        <p>-0.000257 BTC</p>
+        <app-image [route]="'assets/arrow-up.svg'" class="price__send"/>
+      </div>
+    </div>
+    <div class="body__activity">
+
+      <div class="activity__set">
+        <app-image [route]="'assets/currency-ltc.svg'" [ngClass]="'set__currency--ltc'"/>
+
+        <div class="set__details">
+          <p>Recieved Litecoin</p>
+          <p>Pending</p>
+        </div>
+      </div>
+      <div class="activity__price">
+        <p>0.015257 LTC</p>
+        <app-image [route]="'assets/arrow-down.svg'" class="price__recieve"/>
+      </div>
+    </div>
+  </div>
+</div>
