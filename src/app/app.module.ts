@@ -21,6 +21,7 @@ import { LineWindowComponent } from './components/atoms/line-window/line-window.
 import { ActivityWindowComponent } from './components/atoms/activity-window/activity-window.component';
 import { DonutWindowComponent } from './components/atoms/donut-window/donut-window.component';
 import { LineGraphComponent } from './components/atoms/line-graph/line-graph.component';
+import { PlaceholderComponent } from './components/organisms/placeholder/placeholder.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { LineGraphComponent } from './components/atoms/line-graph/line-graph.com
     LineWindowComponent,
     ActivityWindowComponent,
     DonutWindowComponent,
-    LineGraphComponent
+    LineGraphComponent,
+    PlaceholderComponent
   ],
   imports: [
     BrowserModule,

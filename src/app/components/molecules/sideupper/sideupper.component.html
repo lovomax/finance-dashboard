@@ -4,7 +4,7 @@
 <app-logo [isClosed]="isClosed"/>
 
 <div class="container__list" *ngFor="let button of buttons">
-  <div class="container__button" (click)="handlePositionClick(button.btnName)" [ngClass]="button.btnName === position ? 'container__button--selected' : ''">
+  <div class="container__button" (click)="handlePositionClick(button.btnName)" [ngClass]="button.btnName === position ? 'container__button--selected' : ''" >
     <app-image class="container_image" [ngStyle]="{'background-color': button.btnName === position ? '#fafafa' : '#1c1917', 'width': '30px', 'height':'30px'}" [route]="button.imgRoute"/>
     <app-side-button *ngIf="!isClosed" [buttonAttribute]="button"/>
   </div>
