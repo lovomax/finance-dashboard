@@ -22,6 +22,7 @@ import { ActivityWindowComponent } from './components/atoms/activity-window/acti
 import { DonutWindowComponent } from './components/atoms/donut-window/donut-window.component';
 import { LineGraphComponent } from './components/atoms/line-graph/line-graph.component';
 import { PlaceholderComponent } from './components/organisms/placeholder/placeholder.component';
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { PlaceholderComponent } from './components/organisms/placeholder/placeho
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxChartsModule
+    NgxChartsModule,
+    DragScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,24 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  height: 10%;
-
-  margin-top: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   border-bottom: 1px solid rgb(244 244 245);
+  padding: 1rem 0rem;
 }
+
+.header__container {
+  display: flex;
+  height: 10%;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+  padding: 0rem 2rem;
+}
+
 .header__overview {
+  align-items: center;
+  align-items: flex-end;
   display: flex;
   gap: 2rem;
-  align-items: center;
   justify-content: center;
-  align-items: flex-end;
 }
+
 .overview__text {
   display: flex;
   flex-direction: column;
@@ -22,99 +26,109 @@ header {
 }
 
 .overview__text span {
-  font-weight: 400;
   font-size: large;
+  font-weight: 400;
 }
+
 .overview__text p {
   color: #747474;
   font-size: small;
 }
+
 .overview__icons {
   display: flex;
   gap: 1rem;
-
   padding-bottom: 1rem;
 }
+
 .icons__container--btc {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: rgba(90, 33, 182, 0.150);
   border-radius: 100%;
-  background-color: rgba(90, 33, 182, 0.367);
-  width: 35px;
+  display: flex;
   height: 35px;
+  justify-content: center;
+  width: 35px;
 }
+
 .icons__container--eth {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 100%;
   background-color: rgb(255, 238, 237);
-  width: 35px;
+  border-radius: 100%;
+  display: flex;
   height: 35px;
+  justify-content: center;
+  width: 35px;
 }
+
 .icons__container--dgc {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: rgb(223, 215, 255);
   border-radius: 100%;
-  background-color: rgb(230, 239, 231);
-  width: 35px;
+  display: flex;
   height: 35px;
+  justify-content: center;
+  width: 35px;
 }
+
 .icons__container--ltc {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: rgba(0, 128, 0, 0.19);
   border-radius: 100%;
-  background-color: rgba(0, 128, 0, 0.328);
-  width: 35px;
+  display: flex;
   height: 35px;
+  justify-content: center;
+  width: 35px;
 }
+
 .icons__container--arrow {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 100%;
   background-color: #dedede;
-  width: 35px;
+  border-radius: 100%;
+  display: flex;
   height: 35px;
+  justify-content: center;
+  width: 35px;
 }
 
 .currency-btc {
   background-color: rgb(91 33 182);
-  width: 25px;
   height: 25px;
+  width: 25px;
 }
+
 .currency-eth {
   background-color: red;
-  width: 25px;
   height: 25px;
+  width: 25px;
 }
+
 .currency-dgc {
-  width: 20px;
-  height: 20px;
   background-color: rgb(69, 142, 255);
-}
-.currency-ltc {
-  width: 20px;
   height: 20px;
-  background-color: green;
+  width: 20px;
 }
+
+.currency-ltc {
+  background-color: green;
+  height: 20px;
+  width: 20px;
+}
+
 .arrow {
   background-color: #4e4e4e;
 }
 
 .header__user {
+  align-items: center;
   display: flex;
   gap: 2rem;
-  align-items: center
 }
 
 .user__photo {
-  border: 1px solid #b7b7b7;
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
   background-size: cover;
+  border-radius: 100%;
+  border: 1px solid #b7b7b7;
+  height: 60px;
+  width: 60px;
 }

@@ -1,6 +1,6 @@
-<div class="container">
-  <div class="container__card-list container__holder">
-    <div class="card-list__card" *ngFor="let card of cards" [ngStyle]="{'background': 'linear-gradient(0.35turn,' +card.color +')'}">
+<drag-scroll class="container">
+
+    <div drag-scroll-item class="card-list__card" *ngFor="let card of cards" [ngStyle]="{'background': 'linear-gradient(0.35turn,' +card.color +')'}">
       <div class="card__logo" [ngStyle]="{'background-color': card.imgColor}">
         <app-image [route]="card.imgRoute" [ngStyle]="{'background-color': '#fafafa'}"/>
       </div>
@@ -10,6 +10,6 @@
         <img src={{card.waterMark}}>
       </div>
     </div>
-  </div>
-</div>
+  
+</drag-scroll>
 
