@@ -3,7 +3,9 @@
 This is a simple dashboard made with Angular 16 and Chart.js. The project's structured is based in atomic design, and BEM it is also used as a CSS nomenclature 
 
 
-https://github.com/lovomax/finance-dashboard/assets/81450733/f1fdbb6c-f8a0-4ae3-8c12-957710051292
+
+https://github.com/lovomax/finance-dashboard/assets/81450733/db478110-a1fc-4532-890c-fb91a02fbc8c
+
 
 
 ## Getting Started
