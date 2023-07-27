@@ -1,27 +1,30 @@
-# Dashboard
+# Crypto-Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+This is a simple dashboard made with Angular 16 and Chart.js. The project's structured is based in atomic design, and BEM it is also used as a CSS nomenclature 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://github.com/lovomax/finance-dashboard/assets/81450733/f1fdbb6c-f8a0-4ae3-8c12-957710051292
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+These instructions will give you a copy of the project up and running on
+your local machine for development and testing purposes.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+Requirements for the software and other tools to build, test and push 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Installing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A step by step series of examples that tell you how to get a development
+environment running
 
-## Further help
+The first step will be installing the dependencies with npm:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    npm install
+
+Next, you will need to run the development server with the following command:
+
+    ng serve
