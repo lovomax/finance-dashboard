@@ -8,6 +8,8 @@ import { ButtonAttribute } from 'src/app/interfaces/buttonattribute';
 })
 export class SideupperComponent {
   @Input() position : string = ""
+  @Input() isClosed : boolean = false
+  @Output() changeSidebar : EventEmitter<any> = new EventEmitter()
   @Output() changePosition : EventEmitter<any> = new EventEmitter()
   buttons : ButtonAttribute[] = [
     {route: "", value:"Dashboard", imgRoute:"assets/film-script.svg", btnName:"dashboard"}, 
@@ -18,8 +20,12 @@ export class SideupperComponent {
   ]
 
   handlePositionClick(pos : string) {
-    console.log('Posicion', pos)
     this.changePosition.emit(pos)
     this.position = pos
+  }
+
+  handleCloseClick() {
+    this.changeSidebar.emit()
+    this.isClosed = !this.isClosed
   }
 }

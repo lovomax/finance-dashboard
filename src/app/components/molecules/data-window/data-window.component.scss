@@ -1,0 +1,12 @@
+.container__window-set {
+/*   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 50%;
+
+  padding: 2rem 3rem;
+}

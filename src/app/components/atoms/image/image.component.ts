@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-image',
@@ -6,6 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./image.component.scss']
 })
 export class ImageComponent {
-  @Input() route : string = ""
+  @HostBinding('style.-webkit-mask-image')
+  private _route : string = ""
   @Input() color : string = ""
+
+  @Input() set route(fileRoute : string) {
+    this._route = `url("${fileRoute}")`
+  }
 }

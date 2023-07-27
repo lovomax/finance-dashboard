@@ -1,0 +1,70 @@
+.container {
+  border-radius: 10px;
+  border: 1px solid rgb(244 244 245);
+
+  min-width: 450px;
+  height: 100%;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.container__header {
+  padding: 1rem 2rem;
+}
+
+.container__header span {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+.body__activity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem 2rem;
+  gap: 2rem;
+  height: 100px;
+}
+
+.body__activity:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.activity__set {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.set__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.activity__price {
+  display: flex;
+  gap: 1rem;
+}
+
+.set__currency--btc {
+  background-color: rgb(91, 33, 182);
+}
+
+.set__currency--ltc {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}
+
+.price__send {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+.price__recieve {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}

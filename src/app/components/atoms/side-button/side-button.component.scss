@@ -1,0 +1,16 @@
+p {
+  animation: fade-in 0.4s;
+  transition: 0.2;
+}
+@keyframes fade-in {
+  from {
+    display: none;
+    opacity: 0;
+    transform: scale(0, 0)
+  } 
+  to {
+    display: block;
+    opacity: 1;
+    transform: scale(1, 1)
+  }
+}

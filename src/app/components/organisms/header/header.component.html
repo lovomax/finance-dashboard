@@ -1,0 +1,30 @@
+<header>
+  <div class="header__overview">
+    <div class="overview__text">
+      <p>Overview</p>
+      <span>Trading View</span>
+    </div>
+    <div class="overview__icons">
+      <div class="icons__container--btc">
+        <app-image [route]="'assets/currency-btc.svg'" class="currency-btc"/>
+      </div>
+      <div class="icons__container--eth">
+        <app-image [route]="'assets/currency-eth.svg'" class="currency-eth"/>
+      </div>
+      <div class="icons__container--ltc">
+        <app-image [route]="'assets/currency-ltc.svg'" class="currency-ltc"/>
+      </div>
+      <div class="icons__container--dgc">
+        <app-image [route]="'assets/currency-dgc.svg'" class="currency-dgc"/>
+      </div>
+      <div class="icons__container--arrow">
+        <app-image [route]="'assets/caret-right.svg'" class="arrow"/>
+      </div>
+    </div>
+  </div>
+  <div class="header__user">
+    <app-image [route]="'assets/bell.svg'" />
+    <div class="user__photo" [ngStyle]="{'background-image': 'url(assets/user-fill.svg)'}">
+    </div>
+  </div>
+</header>

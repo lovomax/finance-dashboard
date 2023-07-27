@@ -1,0 +1,9 @@
+<div class="container__card-list container__holder">
+  <div class="card-list__card" *ngFor="let card of cards" [ngStyle]="{'background': 'linear-gradient(0.35turn,' +card.color +')'}">
+    <div class="card__logo" [ngStyle]="{'background-color': card.imgColor}">
+      <app-image [route]="card.imgRoute" [ngStyle]="{'background-color': '#fafafa'}"/>
+    </div>
+    <h2>${{card.amount}}</h2>
+    <p>Market Cap ${{card.markcap}}B</p>
+  </div>
+</div>

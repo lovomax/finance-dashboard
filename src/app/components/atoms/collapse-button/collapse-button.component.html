@@ -1,2 +1,8 @@
-<img src="assets/list.svg">
+<div >
+
+  <img *ngIf="!isClosed; else arrowImg" src="assets/list.svg">
+  <ng-template #arrowImg>
+    <img src="assets/caret-right.svg">
+  </ng-template>
+</div>
 

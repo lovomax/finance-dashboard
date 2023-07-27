@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="container__header">
+    <span>Bitcoin</span>
+  </div>
+  <div class="container__body">
+    <div class="wallet">
+      <div class="wallet__details">
+        <span>2.5578</span>
+        <h2 class="wallet__currency">BTC</h2>
+      </div>
+      <p>$2500 USD</p>
+    </div>
+    <div class="body__graph">
+      <app-line-graph />
+      <div class="graph__indicator">
+        <app-image [route]="'assets/arrow-down.svg'" class="indicator__arrow"/>
+        <p>8.5</p>
+      </div>
+    </div>
+  </div>
+</div>
