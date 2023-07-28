@@ -27,6 +27,7 @@ export class BarWindowComponent implements OnInit {
         data: this.selected === 'weekly' ? dataWeekly : dataMonthly,
         options: {
           aspectRatio:2.5,
+          maintainAspectRatio: true,
           plugins: {
             legend: {
               display: false
