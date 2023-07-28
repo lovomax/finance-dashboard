@@ -1,8 +1,6 @@
 <div >
 
-  <img *ngIf="!isClosed; else arrowImg" src="assets/list.svg">
-  <ng-template #arrowImg>
-    <img src="assets/caret-right.svg">
-  </ng-template>
+  <img [ngStyle]="{'display': !isClosed ? 'block' : 'none'}" src="assets/list.svg">
+  <img [ngStyle]="{'display': isClosed ? 'block' : 'none'}" src="assets/caret-right.svg">
 </div>
 

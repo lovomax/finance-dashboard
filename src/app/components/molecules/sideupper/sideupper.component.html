@@ -1,4 +1,4 @@
-<div class="container__collapse-button" [ngStyle]="{'align-self': isClosed ? 'center' : 'flex-start'}" (click)="handleCloseClick()">
+<div class="container__collapse-button" [ngClass]="isClosed ? 'container__collapse-button--closed' : ''" (click)="handleCloseClick()">
   <app-collapse-button [isClosed]="isClosed"/>
 </div>
 <app-logo [isClosed]="isClosed"/>

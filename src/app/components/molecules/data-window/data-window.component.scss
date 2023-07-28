@@ -1,12 +1,25 @@
 .container__window-set {
-/*   display: flex;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  align-items: center;
+/*   display: grid;
+  grid-template-columns: 1fr 1fr; */
   gap: 2rem;
   height: 50%;
-
+  width: 100%;
   padding: 2rem 3rem;
+}
+
+.window-set__upper {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex: 1;
+}
+.window-set__lower {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex: 1;
 }

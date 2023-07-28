@@ -1,6 +1,10 @@
 <div class="container__window-set">
-  <app-bar-window />
-  <app-activity-window />
-  <app-line-window />
-  <app-donut-window />
+  <div class="window-set__upper">
+    <app-bar-window [ngStyle]="{'width': '100%', 'flex': 1}"/>
+    <app-activity-window [ngStyle]="{'width': '100%', 'flex': 1}"/>
+  </div>
+  <div class="window-set__lower">
+    <app-line-window [ngStyle]="{'width': '100%', 'flex': 1}"/>
+    <app-donut-window [ngStyle]="{'width': '100%', 'flex': 1}"/>
+  </div>
 </div>
