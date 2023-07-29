@@ -17,10 +17,18 @@
   gap: 1rem;
   width: 100%;
   flex: 1;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .window-set__lower {
   display: flex;
   gap: 1rem;
   width: 100%;
   flex: 1;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }

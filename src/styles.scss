@@ -14,7 +14,7 @@ $grey-950: #09090a;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-family: "Poppins", "Roboto", sans-serif;
 }
 body {
   height: 100vh;
@@ -24,22 +24,30 @@ body {
 
 .dark-theme {
   background-color: $grey-700;
-  transition: background-color  0.2s;
+  transition: background-color 0.2s;
 
+  .container--closed {
+    background-color: $grey-600 !important;
+    @media (max-width: 768px) {
+      background-color: $grey-600 !important;
+      .closed__toggler {
+        background-color: $grey-600;
+        border: 1px solid $grey-100;
+      }
+    }
+  }
   .container {
-
     &__upper {
-
-      
       background: $grey-600 !important;
 
       .upper__absolute {
-
+        .container__logo-button {
+          background-color: $grey-550;
+        }
         .logo {
           border-bottom: 1px solid $grey-500;
         }
         .container__collapse-button {
-
           .collapse-image {
             background-color: $grey-100;
           }
@@ -48,14 +56,11 @@ body {
     }
 
     &__lower {
-
-      background-color: $grey-600;
+      background-color: $grey-550 !important;
       border-top: 1px solid $grey-500 !important;
 
       .lower__absolute {
-
         .container__switcher {
-
           .switcher__icon {
             background-color: $grey-100;
           }
@@ -70,42 +75,25 @@ body {
     &__button {
       color: $grey-100;
     }
-
-
   }
 
   header {
-    
-    background: $grey-700 !important;
+    background: $grey-550 !important;
     color: $grey-100 !important;
     border-bottom: 1px solid $grey-500 !important;
-    .header__container  {
-
+    .header__container {
       .header__overview {
         .overview__text p {
           color: $grey-200;
         }
-  
       }
     }
     .overview__icons {
-
-      .icons__container {
-        &--btc {
-          background-color: $grey-200;
-        }
-        &--ltc {
-          background-color: $grey-200;
-        }
-        &--eth {
-          background-color: $grey-200;
-        }
-        &--dgc {
-          background-color: $grey-200;
-        }
-        &--arrow {
-          background-color: $grey-300;
-        }
+      .btc,
+      .eth,
+      .ltc,
+      .dgc {
+        background-color: $grey-200;
       }
     }
 
@@ -121,28 +109,26 @@ body {
   }
 
   .sidebar {
-
-    .container--open, .container--closed {
+    .container--open,
+    .container--closed {
       border-right: 1px solid $grey-500 !important;
     }
   }
 
   .router-container {
-
     background-color: $grey-700;
-    
+
     color: $grey-100;
 
     drag-scroll {
       background-color: $grey-700;
     }
     .container__window-set {
-
-      .window-set__upper, .window-set__lower {
-
+      .window-set__upper,
+      .window-set__lower {
         .container {
           background-color: $grey-600;
-          border: 1px solid $grey-500
+          border: 1px solid $grey-500;
         }
       }
 
@@ -157,9 +143,9 @@ body {
           }
           &__body {
             .body__activity {
-
               .activity__set {
-                .set--color-btc, .set--color-ltc {
+                .set--color-btc,
+                .set--color-ltc {
                   background-color: $grey-200 !important;
                 }
               }

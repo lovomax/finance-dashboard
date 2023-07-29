@@ -57,7 +57,9 @@ export class LineGraphComponent implements OnInit {
         ]
       },
       options: {
-        aspectRatio:6.5,
+        aspectRatio:5.5,
+        maintainAspectRatio: false,
+        responsive: true,
         plugins: {
           legend: {
             display: false

@@ -2,6 +2,10 @@ header {
   border-bottom: 1px solid rgb(244 244 245);
   padding: 1rem 0rem;
   transition: background-color  0.2s;
+
+  @media (max-width: 768px) {
+    padding: 1rem 0rem 1rem 3rem;
+  }
 }
 
 .header__container {
@@ -42,55 +46,33 @@ header {
   padding-bottom: 1rem;
 }
 
-.icons__container--btc {
+.icons__container {
   align-items: center;
-  background-color: rgba(90, 33, 182, 0.150);
+
   border-radius: 100%;
   display: flex;
   height: 35px;
   justify-content: center;
   width: 35px;
+
+  &.btc {
+    background-color: rgba(90, 33, 182, 0.150);
+  }
+  &.eth {
+    background-color: rgb(255, 238, 237);
+  }
+  &.ltc {
+    background-color: rgba(0, 128, 0, 0.19);
+  }
+  &.dgc {
+    background-color: rgb(223, 215, 255);
+  }
+  &.arrow-icon {
+    background-color: #dedede;
+  }
 }
 
-.icons__container--eth {
-  align-items: center;
-  background-color: rgb(255, 238, 237);
-  border-radius: 100%;
-  display: flex;
-  height: 35px;
-  justify-content: center;
-  width: 35px;
-}
 
-.icons__container--dgc {
-  align-items: center;
-  background-color: rgb(223, 215, 255);
-  border-radius: 100%;
-  display: flex;
-  height: 35px;
-  justify-content: center;
-  width: 35px;
-}
-
-.icons__container--ltc {
-  align-items: center;
-  background-color: rgba(0, 128, 0, 0.19);
-  border-radius: 100%;
-  display: flex;
-  height: 35px;
-  justify-content: center;
-  width: 35px;
-}
-
-.icons__container--arrow {
-  align-items: center;
-  background-color: #dedede;
-  border-radius: 100%;
-  display: flex;
-  height: 35px;
-  justify-content: center;
-  width: 35px;
-}
 
 .currency-btc {
   background-color: rgb(91 33 182);

@@ -1,4 +1,7 @@
 <div [ngClass]="isClosed ? 'container--closed' : 'container--open'">
+  <div [ngClass]="isClosed ? 'closed__toggler' : 'open__toggler'" (click)="onChangeState()">
+    <app-collapse-button [isClosed]="isClosed" />
+  </div>
   <div class="container__upper">
     <div class="upper__absolute">
       <app-sideupper [isClosed]="isClosed" [theme]="theme" (changeSidebar)="onChangeState()" (changePosition)="onChangePosition($event)" [position]="position" [ngStyle]="{width: '100%', height: '100%'}"/>

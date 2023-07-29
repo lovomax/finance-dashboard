@@ -12,6 +12,14 @@
   gap: 1rem;
   justify-content: space-between;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    overflow:hidden;
+    .container__header {
+      gap: 0.5rem;
+    }
+  }
 }
 .container__header {
   width: 100%;
@@ -25,11 +33,17 @@
 .header__title span {
   font-weight: 500;
   font-size: 28px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 .header__buttons {
   display: flex;
   gap: 1rem;
+  @media (max-width: 768px) {
+    gap: 0.5rem;
 
+  }
 }
 
 .button {
@@ -44,6 +58,11 @@
   width: 5rem;
 
   cursor: pointer;
+  @media (max-width: 768px) {
+    padding: 0rem 0.5rem;
+    width: 100%;
+    font-size: 14px;
+  }
 }
 
 .button--selected { 
@@ -58,16 +77,22 @@
   font-weight: 500;
 
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 0rem 0.5rem;
+    width: 100%;
+    font-size: 14px;
+  }
 }
-.container__body {
-  width: 100%;
-}
+
 .chart-container {
   min-height: 100%;
-  width: 100%;
+
+
 }
 
 #data-week {
-  min-width: 100%;
+
   min-height: 250px;
+
 }

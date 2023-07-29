@@ -30,6 +30,9 @@
 .block__header span {
   font-weight: 500;
   font-size: 28px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .block__body {
@@ -42,10 +45,28 @@
 .body__balance span{
   font-weight: 600;
   font-size: 32px;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
 }
 
 .container p {
   color: #747474;
   font-weight: 500;
   font-size: large;
+}
+
+.balance__status {
+  @media (max-width: 768px) {
+    font-size: 12px !important;
+  }
+}
+
+
+
+.donut__portfolio p {
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }

@@ -1,7 +1,10 @@
-<div class="container__collapse-button" [ngClass]="isClosed ? 'container__collapse-button--closed' : ''" (click)="handleCloseClick()">
-  <app-collapse-button [isClosed]="isClosed"/>
+<div class="container__logo-button">
+
+  <div class="container__collapse-button" [ngClass]="isClosed ? 'container__collapse-button--closed' : ''" (click)="handleCloseClick()">
+    <app-collapse-button [isClosed]="isClosed"/>
+  </div>
+  <app-logo [isClosed]="isClosed"/>
 </div>
-<app-logo [isClosed]="isClosed"/>
 
 <div class="container__list" *ngFor="let button of buttons">
   <div class="container__button" (click)="handlePositionClick(button.btnName)" [ngClass]="button.btnName === position ? 'container__button--selected' : ''" >
