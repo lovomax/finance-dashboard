@@ -29,7 +29,7 @@
   padding: 0.5rem 2rem;
   gap: 2rem;
   height: 100%;
-  transition: all 0.2s;
+
 }
 
 .body__activity:hover {
@@ -41,6 +41,26 @@
   gap: 1rem;
   align-items: center;
   height: 100%;
+}
+
+.set--color-btc {
+  border-radius: 100%;
+  background-color: rgba(90, 33, 182, 0.150);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.set--color-ltc {
+  border-radius: 100%;
+  background-color: rgba(0, 128, 0, 0.19);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .set__details {
@@ -59,8 +79,8 @@
 }
 
 .set__currency--ltc {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   background-color: green;
 }
 

@@ -1,5 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-
+$grey-100: #e1e1e6;
+$grey-200: #c4c4cc;
+$grey-300: #8d8d99;
+$grey-400: #7c7c8a;
+$grey-500: #505059;
+$grey-550: #404047;
+$grey-600: #323238;
+$grey-700: #29292e;
+$grey-800: #202024;
+$grey-900: #121214;
+$grey-950: #09090a;
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +20,153 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+}
+
+.dark-theme {
+  background-color: $grey-700;
+  transition: background-color  0.2s;
+
+  .container {
+
+    &__upper {
+
+      
+      background: $grey-600 !important;
+
+      .upper__absolute {
+
+        .logo {
+          border-bottom: 1px solid $grey-500;
+        }
+        .container__collapse-button {
+
+          .collapse-image {
+            background-color: $grey-100;
+          }
+        }
+      }
+    }
+
+    &__lower {
+
+      background-color: $grey-600;
+      border-top: 1px solid $grey-500 !important;
+
+      .lower__absolute {
+
+        .container__switcher {
+
+          .switcher__icon {
+            background-color: $grey-100;
+          }
+
+          .switch {
+            border: 1px solid $grey-500;
+          }
+        }
+      }
+    }
+
+    &__button {
+      color: $grey-100;
+    }
+
+
+  }
+
+  header {
+    
+    background: $grey-700 !important;
+    color: $grey-100 !important;
+    border-bottom: 1px solid $grey-500 !important;
+    .header__container  {
+
+      .header__overview {
+        .overview__text p {
+          color: $grey-200;
+        }
+  
+      }
+    }
+    .overview__icons {
+
+      .icons__container {
+        &--btc {
+          background-color: $grey-200;
+        }
+        &--ltc {
+          background-color: $grey-200;
+        }
+        &--eth {
+          background-color: $grey-200;
+        }
+        &--dgc {
+          background-color: $grey-200;
+        }
+        &--arrow {
+          background-color: $grey-300;
+        }
+      }
+    }
+
+    .user__notification {
+      background-color: $grey-100;
+    }
+    .header__user {
+      border: 1px solid $grey-500;
+    }
+    .user__photo {
+      background-color: $grey-100;
+    }
+  }
+
+  .sidebar {
+
+    .container--open, .container--closed {
+      border-right: 1px solid $grey-500 !important;
+    }
+  }
+
+  .router-container {
+
+    background-color: $grey-700;
+    
+    color: $grey-100;
+
+    drag-scroll {
+      background-color: $grey-700;
+    }
+    .container__window-set {
+
+      .window-set__upper, .window-set__lower {
+
+        .container {
+          background-color: $grey-600;
+          border: 1px solid $grey-500
+        }
+      }
+
+      .window-set__upper {
+        .container {
+          &__header {
+            .header__buttons {
+              .button {
+                color: $grey-200;
+              }
+            }
+          }
+          &__body {
+            .body__activity {
+
+              .activity__set {
+                .set--color-btc, .set--color-ltc {
+                  background-color: $grey-200 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

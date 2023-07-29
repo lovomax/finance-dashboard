@@ -1,6 +1,6 @@
 <div >
 
-  <img [ngStyle]="{'display': !isClosed ? 'block' : 'none'}" src="assets/list.svg">
-  <img [ngStyle]="{'display': isClosed ? 'block' : 'none'}" src="assets/caret-right.svg">
+  <app-image [ngStyle]="{'display': !isClosed ? 'block' : 'none'}" class="collapse-image" [route]="'assets/list.svg'" />
+  <app-image [ngStyle]="{'display': isClosed ? 'block' : 'none'}" class="collapse-image" [route]="'assets/caret-right.svg'"/>
 </div>
 

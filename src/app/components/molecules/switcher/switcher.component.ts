@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-switcher',
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class SwitcherComponent {
   @Input() isClosed! : boolean
+  @Input() theme! : boolean
+  @Output() changeTheme : EventEmitter<any> = new EventEmitter()
+
+  switchTheme() {
+    this.changeTheme.emit()
+  }
 }

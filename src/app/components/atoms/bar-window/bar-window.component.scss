@@ -29,7 +29,7 @@
 .header__buttons {
   display: flex;
   gap: 1rem;
-  transition: all 0.3s;
+
 }
 
 .button {
@@ -42,7 +42,7 @@
   padding: 0.5 1rem;
   font-weight: 500;
   width: 5rem;
-  transition: all 0.3s;
+
   cursor: pointer;
 }
 
@@ -56,7 +56,7 @@
   background-color: rgb(91, 33, 182);
   color: #fafafa;
   font-weight: 500;
-  transition: all 0.3s;
+
   cursor: pointer;
 }
 .container__body {

@@ -1,6 +1,5 @@
 .container--open {
   display: flex;
-
   flex-direction: column;
   height: 100vh;
 
@@ -9,7 +8,8 @@
   overflow: hidden;
   border-right:  1px solid rgb(244 244 245);
   font-weight: 500;
-  transition:all 0.1s;
+  transition: width 0.1s;
+
 }
 
 .container--closed {
@@ -22,7 +22,8 @@
   border-right:  1px solid rgb(244 244 245);
   font-weight: 500;
   overflow: hidden;
-  transition:all 0.1s;
+  transition: width 0.1s;
+
 }
 
 .container__upper {
@@ -35,6 +36,7 @@
   overflow: hidden;
   height: 100%;
   width: 200px;
+  transition: background-color  0.2s;
   background: repeating-linear-gradient(
     130deg,
     rgba(241, 245, 249, 0.69)1px,
@@ -58,6 +60,7 @@
   border-top: 1px solid rgb(244 244 245);
   position: relative;
   overflow: hidden;
+  transition: background-color  0.2s;
 }
 
 .lower__absolute {

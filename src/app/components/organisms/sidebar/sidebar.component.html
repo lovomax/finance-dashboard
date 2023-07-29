@@ -1,13 +1,13 @@
 <div [ngClass]="isClosed ? 'container--closed' : 'container--open'">
   <div class="container__upper">
     <div class="upper__absolute">
-      <app-sideupper [isClosed]="isClosed" (changeSidebar)="onChangeState()" (changePosition)="onChangePosition($event)" [position]="position" [ngStyle]="{width: '100%', height: '100%'}"/>
+      <app-sideupper [isClosed]="isClosed" [theme]="theme" (changeSidebar)="onChangeState()" (changePosition)="onChangePosition($event)" [position]="position" [ngStyle]="{width: '100%', height: '100%'}"/>
     </div>
   </div>
 
   <div class="container__lower">
     <div class="lower__absolute">
-      <app-switcher [isClosed]="isClosed"/>
+      <app-switcher [isClosed]="isClosed" (changeTheme)="onChangeTheme()" [theme]="theme"/>
     </div>
   </div>
 

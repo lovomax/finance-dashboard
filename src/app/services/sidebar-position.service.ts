@@ -15,6 +15,10 @@ export class SidebarPositionService {
     localStorage.setItem("closed", String(state))
   }
 
+  public saveTheme(state : boolean) {
+    localStorage.setItem("theme", String(state))
+  }
+
   public getData(key: string) : string {
     if(key === "closed") {
       return localStorage.getItem(key) ?? "false"

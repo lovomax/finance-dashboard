@@ -5,9 +5,9 @@
   <div class="container__body">
     <div class="body__activity">
       <div class="activity__set">
-        
-          <app-image [route]="'assets/currency-btc.svg'" [ngClass]="'set__currency--btc'"/>
-
+        <div class="activity__set set--color-btc">
+          <app-image [route]="'assets/currency-btc.svg'" class="set__currency--btc"/>
+        </div>
         <div class="set__details">
           <p>Sent Bitcoin</p>
           <p>To Bitcoin Address</p>
@@ -21,7 +21,9 @@
     <div class="body__activity">
 
       <div class="activity__set">
-        <app-image [route]="'assets/currency-ltc.svg'" [ngClass]="'set__currency--ltc'"/>
+        <div class="activity__set set--color-ltc">
+          <app-image [route]="'assets/currency-ltc.svg'" [ngClass]="'set__currency--ltc'"/>
+        </div>
 
         <div class="set__details">
           <p>Recieved Litecoin</p>

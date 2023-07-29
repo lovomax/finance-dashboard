@@ -1,6 +1,7 @@
 header {
   border-bottom: 1px solid rgb(244 244 245);
   padding: 1rem 0rem;
+  transition: background-color  0.2s;
 }
 
 .header__container {
@@ -127,10 +128,20 @@ header {
   gap: 2rem;
 }
 
+.header__user-container {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.header__user {
+  border: 1px solid #b7b7b7;
+  border-radius: 100%;
+}
+
 .user__photo {
   background-size: cover;
   border-radius: 100%;
-  border: 1px solid #b7b7b7;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }

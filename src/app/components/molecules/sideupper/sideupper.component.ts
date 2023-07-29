@@ -8,6 +8,7 @@ import { ButtonAttribute } from 'src/app/interfaces/buttonattribute';
 export class SideupperComponent {
   @Input() position : string = ""
   @Input() isClosed : boolean = false
+  @Input() theme! : boolean
   @Output() changeSidebar : EventEmitter<any> = new EventEmitter()
   @Output() changePosition : EventEmitter<any> = new EventEmitter()
   buttons : ButtonAttribute[] = [

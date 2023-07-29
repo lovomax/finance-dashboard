@@ -23,9 +23,11 @@
         </div>
       </div>
     </div>
-    <div class="header__user">
-      <app-image [route]="'assets/bell.svg'" />
-      <div class="user__photo" [ngStyle]="{'background-image': 'url(assets/user-fill.svg)'}">
+    <div class="header__user-container">
+
+      <app-image [route]="'assets/bell.svg'" class="user__notification"/>
+      <div class="header__user">
+        <app-image class="user__photo" [route]="'assets/user-fill.svg'" />
       </div>
     </div>
   </div>

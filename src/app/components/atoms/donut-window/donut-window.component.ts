@@ -31,6 +31,7 @@ export class DonutWindowComponent  implements OnInit {
       },
       options: {
         aspectRatio:1,
+        borderColor: 'transparent',
         cutout: '80%',
         plugins: {
           legend: {
