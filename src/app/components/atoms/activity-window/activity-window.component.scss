@@ -7,6 +7,10 @@
 
 .container__header {
   padding: 1rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .container__header span {
@@ -34,8 +38,9 @@
   gap: 2rem;
   height: 100%;
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
     gap: 0rem;  
+    padding: 0.5rem 1rem;
   }
 }
 
